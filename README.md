@@ -1,95 +1,106 @@
-# Production Project Control & Monitoring Platform via AI
+# Production Project Control & Monitoring Platform via AI (PulseCore)
 
-An AI-powered platform for monitoring production and project activities, tracking progress, identifying potential risks, and supporting faster, data-driven decision making.
+An AI-powered SaaS platform for monitoring production and project activities, tracking progress in real time, detecting anomalies and potential bottlenecks, and driving faster, evidence-backed decision making.
+
+---
 
 ## Overview
 
-The **Production Project Control & Monitoring Platform via AI** is designed to provide a centralized view of project and production performance. It aims to reduce dependency on manual monitoring and help users identify delays, abnormal trends, and potential issues at an early stage.
+The **Production Project Control & Monitoring Platform via AI** provides a centralized, modern interface combining three core capabilities:
 
-The platform combines project monitoring with AI-based analysis to turn operational data into useful insights and alerts.
+1. **Project Management & Tracking** – Full task lifecycle, milestone tracking, and an interactive Kanban board.
+2. **Production Control & Monitoring** – Isolated shopfloor operations module tracking equipment sensor telemetry (temperature, vibration, uptime, efficiency) and multi-stage batch production orders.
+3. **AI Intelligence & Risk Analysis** – Real-time anomaly detection, deterministic telemetry evidence, predictive delay modeling, and actionable recommendations.
 
-## Problem Statement
+---
 
-Traditional production and project monitoring often depends on manual updates, spreadsheets, and periodic reports. This can make it difficult to:
+## System Architecture
 
-- Track progress in real time
-- Detect delays early
-- Identify performance issues
-- Monitor multiple activities from one place
-- Make timely, data-driven decisions
+```text
+Core/
+├── Frontend/               # PulseCore Web Client (React + TypeScript + Vite + Tailwind CSS)
+│   ├── src/
+│   │   ├── app/            # Application router & route definitions
+│   │   ├── components/     # Reusable design system, layouts, dialogs, drawers
+│   │   ├── features/       # Modular features:
+│   │   │   ├── dashboard/  # Central overview, KPI summary, active tasks, project health
+│   │   │   ├── tasks/      # Deliverables list, filters, task details drawer
+│   │   │   ├── kanban/     # dnd-kit drag-and-drop workflow board
+│   │   │   ├── projects/   # Program portfolio & project detail breakdown
+│   │   │   ├── production/ # Equipment telemetry, sensor thresholds, batch orders
+│   │   │   ├── ai-insights/# Deterministic evidence vs. predicted risk trajectories
+│   │   │   ├── calendar/   # Month, Week, and Gantt timeline with dependencies
+│   │   │   ├── reports/    # Recharts deliverable burnup & workload distribution
+│   │   │   ├── team/       # Team directory & workspace permissions matrix
+│   │   │   └── settings/   # Profile, workspace, API config & security audit
+│   │   ├── lib/            # Utilities & date formatting
+│   │   ├── mocks/          # Centralized typed mock datasets
+│   │   ├── services/       # Typed service contracts & centralized API client
+│   │   ├── stores/         # Reactive Zustand state store
+│   │   ├── test/           # Vitest automated unit & integration test suites
+│   │   └── types/          # Domain TypeScript type definitions
+│   └── package.json
+└── README.md
+```
 
-## Proposed Solution
-
-This project provides a centralized monitoring platform that can:
-
-- Track project and production activities
-- Display progress and status through a dashboard
-- Identify tasks or activities that require attention
-- Analyze available data using AI
-- Highlight potential risks and abnormal patterns
-- Provide alerts and actionable insights
-- Support better decision making
+---
 
 ## Key Features
 
-- 📊 **Centralized Dashboard** – View important project and production information in one place.
-- 📈 **Progress Monitoring** – Track tasks, activities, and overall progress.
-- 🤖 **AI-Based Analysis** – Analyze data to identify trends, anomalies, and potential risks.
-- ⚠️ **Risk & Delay Detection** – Highlight activities that may cause delays or require attention.
-- 🔔 **Alerts & Notifications** – Bring important issues to the user's attention.
-- 📋 **Project Control** – Maintain visibility over project activities and performance.
-- 📌 **Data-Driven Insights** – Convert operational data into useful information for decision making.
+- 📊 **Centralized Overview Dashboard** – 5 live KPIs, project progress calculated dynamically from tasks, smart due-date alerts, and an activity audit trail.
+- 📋 **Project & Task Management** – Filterable by status and priority, starter templates, subtasks checklists, and comment threads.
+- 🗂️ **Interactive Kanban Board** – Drag-and-drop task movements (`dnd-kit`) across *To Do*, *In Progress*, *In Review*, and *Done* with real-time project metric recalculation.
+- ⚙️ **Production Control Module** – Isolated operational environment tracking 4 industrial machines with live vibration, temperature, efficiency, and threshold warning settings.
+- 🤖 **AI Risk Intelligence** – Dual-perspective cards separating confirmed telemetry anomalies from modeled risk impacts, with acknowledge and dismiss workflows.
+- 📅 **Calendar & Timeline** – October 2026 month/week calendar grid and Gantt timeline view displaying task duration spans and dependencies.
+- 📈 **Analytics & Reports** – Recharts deliverable burnup line chart and team workload distribution bar chart.
+- 👥 **Team Directory** – Searchable member directory with department filters, active task workloads, and an invite member modal with permissions matrix.
+- 🔧 **Settings & Centralized API Client** – Central API configuration supporting instant toggling between local Mock Repository mode and Live Backend REST endpoints, with simulated network latency and error simulation for resilience testing.
+- 🛡️ **Reliability & Resilience** – Global React Error Boundary, loading shimmer skeletons, and unified empty states across all views.
 
-## How It Works
+---
 
-```text
-Production / Project Data
-          ↓
-     Data Processing
-          ↓
-     Monitoring System
-          ↓
-       AI Analysis
-          ↓
- Risks / Trends / Alerts
-          ↓
-   Manager / User Action
+## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm or yarn
+
+### Quick Start
+
+```bash
+# 1. Navigate to the Frontend directory
+cd Frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Start local development server
+npm run dev
 ```
 
-## Benefits
+Visit `http://localhost:5173/` in your browser.
 
-- Reduces manual monitoring effort
-- Provides centralized project visibility
-- Helps detect problems earlier
-- Supports proactive project management
-- Improves decision-making using data and AI
-- Can help reduce delays and operational risks
+### Test & Build
 
-## Future Scope
+```bash
+# Run all automated tests (28 tests across 3 suites)
+npm test
 
-The platform can be extended with:
+# Build production bundle with zero TypeScript/lint errors
+npm run build
+```
 
-- Predictive analytics for project completion dates
-- Machine learning-based delay prediction
-- Production anomaly detection
-- Automated reports
-- Role-based access control
-- Real-time IoT/sensor data integration
-- Advanced analytics and performance forecasting
-- Email/SMS/WhatsApp notifications
-
-## Project Status
-
-🚧 **Under Development**
-
-This repository currently contains the project documentation and serves as the base for further implementation and development.
+---
 
 ## Author
 
-**Suryansh Soni**
+**Suryansh Soni**  
+B.Tech – IoTBC  
+GitHub: [@sonisuryansh](https://github.com/sonisuryansh)
 
-B.Tech – IoTBC
+---
 
 ## License
 
-This project is intended for educational and development purposes. A specific open-source license can be added when required.
+This project is intended for educational and developmental purposes.
