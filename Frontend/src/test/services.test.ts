@@ -27,13 +27,13 @@ describe('Phase 12: Centralized API Client & Configuration', () => {
 
   it('updates API configuration dynamically and reflects changes', () => {
     updateApiClientConfig({
-      baseUrl: 'https://staging.api.pulsecore.internal/v2',
+      baseUrl: 'https://staging.api.thecloves.internal/v2',
       mockLatencyMs: 250,
       mode: 'live'
     })
 
     const updated = getApiClientConfig()
-    expect(updated.baseUrl).toBe('https://staging.api.pulsecore.internal/v2')
+    expect(updated.baseUrl).toBe('https://staging.api.thecloves.internal/v2')
     expect(updated.mockLatencyMs).toBe(250)
     expect(updated.mode).toBe('live')
   })
@@ -133,7 +133,7 @@ describe('Phase 12: Typed Services & Repositories', () => {
     const dumpStr = await workspaceService.exportWorkspaceData()
     expect(dumpStr).toBeDefined()
     const parsed = JSON.parse(dumpStr)
-    expect(parsed.platform).toContain('PulseCore')
+    expect(parsed.platform).toContain('The Cloves')
     expect(parsed.workspaces).toBeDefined()
     expect(parsed.projects).toBeDefined()
   })

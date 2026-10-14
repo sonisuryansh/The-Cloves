@@ -12,7 +12,7 @@ export const MOCK_USERS: User[] = [
   {
     id: 'usr-1',
     name: 'Alex Morgan',
-    email: 'alex.morgan@pulsecore.internal',
+    email: 'alex.morgan@thecloves.internal',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=128&auto=format&fit=crop&q=80',
     role: 'Lead Systems Engineer',
     department: 'Engineering',
@@ -23,7 +23,7 @@ export const MOCK_USERS: User[] = [
   {
     id: 'usr-2',
     name: 'Sarah Chen',
-    email: 'sarah.chen@pulsecore.internal',
+    email: 'sarah.chen@thecloves.internal',
     avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=128&auto=format&fit=crop&q=80',
     role: 'Solutions Architect',
     department: 'Software Architecture',
@@ -34,7 +34,7 @@ export const MOCK_USERS: User[] = [
   {
     id: 'usr-3',
     name: 'Marcus Vance',
-    email: 'marcus.v@pulsecore.internal',
+    email: 'marcus.v@thecloves.internal',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=128&auto=format&fit=crop&q=80',
     role: 'Plant Operations Director',
     department: 'Production Control',
@@ -45,7 +45,7 @@ export const MOCK_USERS: User[] = [
   {
     id: 'usr-4',
     name: 'Elena Rostova',
-    email: 'elena.r@pulsecore.internal',
+    email: 'elena.r@thecloves.internal',
     avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=128&auto=format&fit=crop&q=80',
     role: 'Senior Embedded Engineer',
     department: 'Hardware & Firmware',
@@ -56,7 +56,7 @@ export const MOCK_USERS: User[] = [
   {
     id: 'usr-5',
     name: 'Liam Patel',
-    email: 'liam.p@pulsecore.internal',
+    email: 'liam.p@thecloves.internal',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=128&auto=format&fit=crop&q=80',
     role: 'Quality Assurance Lead',
     department: 'Quality Engineering',
@@ -69,7 +69,7 @@ export const MOCK_USERS: User[] = [
 export const CURRENT_USER: User = MOCK_USERS[0]
 
 export const MOCK_WORKSPACES: Workspace[] = [
-  { id: 'ws-1', name: 'PulseCore Robotics HQ', code: 'PCR-HQ', plan: 'Enterprise Enterprise', membersCount: 42 },
+  { id: 'ws-1', name: 'The Cloves Robotics HQ', code: 'TCL-HQ', plan: 'Enterprise Enterprise', membersCount: 42 },
   { id: 'ws-2', name: 'Plant Line 04 - Detroit', code: 'PL-04', plan: 'Manufacturing Pro', membersCount: 18 },
   { id: 'ws-3', name: 'Autonomous Systems Lab', code: 'ASL', plan: 'R&D Tier', membersCount: 12 }
 ]

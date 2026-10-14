@@ -143,7 +143,7 @@ export const Sidebar: React.FC = () => {
             {!sidebarCollapsed && (
               <div className="flex flex-col truncate">
                 <span className="font-bold text-sm tracking-tight text-slate-900 dark:text-slate-100">
-                  PulseCore
+                  The Cloves
                 </span>
                 <span className="text-[10px] text-slate-400 font-medium tracking-wide uppercase">
                   PPM & Production

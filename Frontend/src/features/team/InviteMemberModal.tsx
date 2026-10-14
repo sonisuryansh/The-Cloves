@@ -75,7 +75,7 @@ export const InviteMemberModal: React.FC<InviteMemberModalProps> = ({
       isOpen={isOpen}
       onClose={onClose}
       title="Invite Team Member"
-      description="Add an engineer, operator, or manager to the PulseCore workspace."
+      description="Add an engineer, operator, or manager to The Cloves workspace."
       maxWidth="md"
     >
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -108,7 +108,7 @@ export const InviteMemberModal: React.FC<InviteMemberModalProps> = ({
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="jordan.h@pulsecore.internal"
+              placeholder="jordan.h@thecloves.internal"
             />
           </div>
         </div>

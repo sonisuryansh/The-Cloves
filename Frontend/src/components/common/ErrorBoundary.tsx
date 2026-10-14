@@ -27,7 +27,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, State> {
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     this.setState({ errorInfo })
-    console.error('PulseCore Uncaught Error Boundary:', error, errorInfo)
+    console.error('The Cloves Uncaught Error Boundary:', error, errorInfo)
   }
 
   private handleReset = () => {
@@ -63,7 +63,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, State> {
                 Application Rendering Interruption
               </h3>
               <p className="text-xs text-slate-600 dark:text-slate-400">
-                A runtime exception occurred in the PulseCore UI tree. No workspace or production data was lost.
+                A runtime exception occurred in The Cloves UI tree. No workspace or production data was lost.
               </p>
             </div>
 

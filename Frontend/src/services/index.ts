@@ -1,5 +1,5 @@
 /**
- * PulseCore Service & Repository Layer (Phase 12)
+ * The Cloves Service & Repository Layer (Phase 12)
  * Decouples UI components from data sources.
  * Future backends can implement these interfaces without changing frontend UI code.
  */
@@ -308,7 +308,7 @@ export class MockWorkspaceService implements IWorkspaceService {
     await simulateNetworkDelay()
     const dump = {
       exportedAt: new Date().toISOString(),
-      platform: 'PulseCore AI Project Control & Monitoring',
+      platform: 'The Cloves AI Project Control & Monitoring',
       version: '1.0.0',
       workspaces: this.workspaces,
       projects: INITIAL_PROJECTS,

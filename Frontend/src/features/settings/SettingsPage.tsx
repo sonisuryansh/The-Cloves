@@ -103,7 +103,7 @@ export const SettingsPage: React.FC = () => {
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `pulsecore_export_${Date.now()}.json`
+      a.download = `thecloves_export_${Date.now()}.json`
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
@@ -573,7 +573,7 @@ export const SettingsPage: React.FC = () => {
                   Architectural Separation:
                 </span>
                 <p className="text-slate-500 leading-relaxed">
-                  PulseCore features access data through strongly-typed repository contracts (
+                  The Cloves features access data through strongly-typed repository contracts (
                   <code className="text-blue-600 font-mono">IProjectService</code>,{' '}
                   <code className="text-blue-600 font-mono">ITaskService</code>,{' '}
                   <code className="text-blue-600 font-mono">IProductionService</code>). Switching to a live backend requires only updating the configuration below without touching any UI code.
@@ -637,7 +637,7 @@ export const SettingsPage: React.FC = () => {
                   <Input
                     value={apiState.baseUrl}
                     onChange={(e) => handleUpdateApiConfig({ baseUrl: e.target.value })}
-                    placeholder="https://api.pulsecore.internal/v1"
+                    placeholder="https://api.thecloves.internal/v1"
                     className="font-mono text-xs"
                   />
                   <Button
@@ -805,19 +805,19 @@ export const SettingsPage: React.FC = () => {
                   {[
                     {
                       event: 'API Token generated for manufacturing gateway',
-                      actor: 'alex.morgan@pulsecore.internal',
+                      actor: 'alex.morgan@thecloves.internal',
                       time: 'Today at 14:22 UTC',
                       status: 'Success'
                     },
                     {
                       event: 'Production hold acknowledged for Order #PO-9021',
-                      actor: 'marcus.v@pulsecore.internal',
+                      actor: 'marcus.v@thecloves.internal',
                       time: 'Today at 11:05 UTC',
                       status: 'Success'
                     },
                     {
                       event: 'New team member invited: Jordan Hayes',
-                      actor: 'alex.morgan@pulsecore.internal',
+                      actor: 'alex.morgan@thecloves.internal',
                       time: 'Yesterday at 16:45 UTC',
                       status: 'Success'
                     }

@@ -1,5 +1,5 @@
 /**
- * PulseCore Central API Client & Repository Configuration
+ * The Cloves Central API Client & Repository Configuration
  * Phase 12 Architecture: Typed Service & Repository Layer
  * Supports seamless switching between local Mock Repository mode and real Backend API.
  */
@@ -29,16 +29,16 @@ export class ApiError extends Error {
 }
 
 const DEFAULT_CONFIG: ApiClientConfig = {
-  baseUrl: (typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_BASE_URL) || 'https://api.pulsecore.internal/v1',
+  baseUrl: (typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_BASE_URL) || 'https://api.thecloves.internal/v1',
   timeoutMs: 8000,
   mode: 'mock',
   mockLatencyMs: 0,
   simulateErrors: false,
-  apiKey: 'pc_live_mock_8f93a1e2b4',
+  apiKey: 'tc_live_mock_8f93a1e2b4',
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',
-    'X-PulseCore-Client': 'PulseCore-Web/1.0.0'
+    'X-TheCloves-Client': 'TheCloves-Web/1.0.0'
   }
 }
 
@@ -90,7 +90,7 @@ export async function simulateNetworkDelay(): Promise<void> {
   if (apiConfig.simulateErrors) {
     throw new ApiError('Simulated network fault triggered by Client Configuration.', 503, {
       endpoint: 'mock-pipeline',
-      reason: 'User activated Error Simulation in PulseCore Settings'
+      reason: 'User activated Error Simulation in The Cloves Settings'
     })
   }
 

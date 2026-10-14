@@ -212,7 +212,7 @@ describe('Phase 10: Reports & Team Management', () => {
     useAppStore.getState().addTeamMember({
       id: 'usr-new-99',
       name: 'Jordan Hayes',
-      email: 'jordan.h@pulsecore.internal',
+      email: 'jordan.h@thecloves.internal',
       avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=128&auto=format&fit=crop&q=80',
       role: 'Robotics Integration Specialist',
       department: 'Hardware & Firmware',

@@ -1,4 +1,4 @@
-# Production Project Control & Monitoring Platform via AI (PulseCore)
+# Production Project Control & Monitoring Platform via AI (The Cloves)
 
 An AI-powered SaaS platform for monitoring production and project activities, tracking progress in real time, detecting anomalies and potential bottlenecks, and driving faster, evidence-backed decision making.
 
@@ -6,7 +6,7 @@ An AI-powered SaaS platform for monitoring production and project activities, tr
 
 ## Overview
 
-The **Production Project Control & Monitoring Platform via AI** provides a centralized, modern interface combining three core capabilities:
+The **Production Project Control & Monitoring Platform via AI (The Cloves)** provides a centralized, modern interface combining three core capabilities:
 
 1. **Project Management & Tracking** – Full task lifecycle, milestone tracking, and an interactive Kanban board.
 2. **Production Control & Monitoring** – Isolated shopfloor operations module tracking equipment sensor telemetry (temperature, vibration, uptime, efficiency) and multi-stage batch production orders.
@@ -18,7 +18,7 @@ The **Production Project Control & Monitoring Platform via AI** provides a centr
 
 ```text
 Core/
-├── Frontend/               # PulseCore Web Client (React + TypeScript + Vite + Tailwind CSS)
+├── Frontend/               # The Cloves Web Client (React + TypeScript + Vite + Tailwind CSS)
 │   ├── src/
 │   │   ├── app/            # Application router & route definitions
 │   │   ├── components/     # Reusable design system, layouts, dialogs, drawers
