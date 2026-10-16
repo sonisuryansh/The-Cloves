@@ -93,10 +93,13 @@ npm run build
 
 ---
 
-## Author
+## Contributors
 
 **Suryansh Soni**  
-B.Tech – IoTBC  
+**Shobhit Kumar** 
+**Vansh Dixit** 
+**Abhikalp Shikhar** 
+
 GitHub: [@sonisuryansh](https://github.com/sonisuryansh)
 
 ---
