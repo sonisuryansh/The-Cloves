@@ -95,10 +95,7 @@ npm run build
 
 ## Contributors
 
-**Suryansh Soni**  
-**Shobhit Kumar** 
-**Vansh Dixit** 
-**Abhikalp Shikhar** 
+**Suryansh Soni** || **Shobhit Kumar** || **Vansh Dixit** || **Abhikalp Shikhar** 
 
 GitHub: [@sonisuryansh](https://github.com/sonisuryansh)
 
